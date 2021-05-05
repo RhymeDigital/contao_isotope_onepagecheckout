@@ -1,0 +1,33 @@
+{
+  "name": "rhymedigital/contao_isotope_onepagecheckout",
+  "description": "A Contao CMS 4.x and Isotope eCommerce bundle that allows a one-page checkout similar to Shopify.",
+  "minimum-stability": "stable",
+  "type": "contao-bundle",
+  "license": "LGPL-2.1-or-later",
+  "keywords": [
+    "contao",
+    "isotope"
+  ],
+  "authors": [
+    {
+      "name": "Rhyme Digital",
+      "homepage": "https://github.com/rhymedigital/"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "contao/core-bundle": "^4.4",
+    "isotope/isotope-core": "^2.7"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rhyme\\ContaoIsotopeOnePageCheckoutBundle\\": "src"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "Rhyme\\ContaoIsotopeOnePageCheckoutBundle\\ContaoManager\\Plugin"
+  }
+}

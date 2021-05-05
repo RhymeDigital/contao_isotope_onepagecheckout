@@ -1,0 +1,19 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+<div id="checkoutContent<?= $this->id ?>" class="content">
+    <div class="stepsPanel"></div>
+    <div class="messagesPanel"></div>
+    <div class="actionPanel"></div>
+    <?php if ($this->showSummaryPanel): ?>
+        <div class="summaryPanel"></div>
+    <?php endif; ?>
+</div>
+<script>
+    (function ($) {
+        $(document).ready(function() {
+            Rhyme.OnePageCheckout.init('checkoutContent<?= $this->id ?>');
+        });
+    })(jQuery);
+</script>
+<?php $this->endblock(); ?>

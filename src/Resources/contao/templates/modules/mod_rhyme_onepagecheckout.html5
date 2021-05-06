@@ -4,10 +4,10 @@
 <div id="checkoutContent<?= $this->id ?>" class="content">
     <div class="stepsPanel"></div>
     <div class="messagesPanel"></div>
-    <div class="actionPanel"></div>
-    <?php if ($this->showSummaryPanel): ?>
+    <?php if ($this->iso_showCartSummary): ?>
         <div class="summaryPanel"></div>
     <?php endif; ?>
+    <div class="actionPanel"></div>
 </div>
 <script>
     (function ($) {

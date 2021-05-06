@@ -48,6 +48,9 @@
     <?php endif; ?>
 <?php endif; ?>
 
+<?php if($this->component === 'summary'): ?>
+    <?= $this->getCartSummary(); ?>
+<?php endif; ?>
 
 
 

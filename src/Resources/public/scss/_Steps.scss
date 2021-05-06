@@ -1,0 +1,28 @@
+
+
+@media screen and (min-width:0px) {
+
+    .mod_rhyme_onepagecheckout {
+        .steps {
+            padding: 20px 0;
+
+            ol, li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            ol {
+                display: flex;
+                justify-content: stretch;
+            }
+            li {
+                text-align: center;
+                padding: 10px;
+                display: inline-block;
+                background-color: rgba($white, 0.25);
+                margin: 0 1px;
+                flex-grow: 1;
+            }
+        }
+    }
+}

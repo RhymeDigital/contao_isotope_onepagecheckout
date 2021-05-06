@@ -65,64 +65,11 @@
     .mod_rhyme_onepagecheckout .submit_container .submit.previous:hover {
       color: #000000 !important; } }
 @media screen and (min-width: 0px) {
-  /**
-   * Login / New user / Guest
-   */
-  #login_newuser_guest_login,
-  #login_newuser_guest_newuser,
-  #login_newuser_guest_guest {
-    margin: 0 auto 50px;
-    max-width: 320px; }
-
-  #tl_login_checkout .mod_login br {
-    display: none; }
-
-  #tl_login_checkout .mod_login table {
-    width: 100%; }
-
-  #iso_mod_checkout_login_newuser_guest p.message {
-    padding: 0;
-    font-size: 14px; }
-
-  #iso_mod_checkout_login_newuser_guest .submit_container {
-    display: none; }
-
-  #iso_mod_checkout_login_newuser_guest #tl_login_checkout .submit_container {
-    display: block; } }
-@media screen and (min-width: 641px) {
-  #login_newuser_guest_login,
-  #login_newuser_guest_newuser,
-  #login_newuser_guest_guest {
-    box-sizing: border-box;
-    margin: 0;
-    max-width: none;
-    width: 50%;
-    float: left;
-    padding: 20px; }
-
-  #login_newuser_guest_newuser,
-  #login_newuser_guest_guest {
-    padding-bottom: 0; }
-
-  #login_newuser_guest_guest {
-    padding-top: 0; } }
-@media screen and (min-width: 769px) {
-  #iso_mod_checkout_login_newuser_guest #tl_login_checkout .checkbox_container {
-    float: left;
-    width: 50%; }
-
-  #iso_mod_checkout_login_newuser_guest #tl_login_checkout .submit_container {
-    display: block;
-    float: right;
-    width: 50%;
-    clear: none;
-    padding-top: 0; } }
-@media screen and (min-width: 0px) {
-  .mod_rhyme_onepagecheckoutarea .mod_iso_messages {
+  .mod_rhyme_onepagecheckout .mod_iso_messages {
     text-align: center;
     max-width: 700px;
     margin: 0 auto; }
-    .mod_rhyme_onepagecheckoutarea .mod_iso_messages p.iso_error {
+    .mod_rhyme_onepagecheckout .mod_iso_messages p.iso_error {
       padding: 20px;
       display: inline-block;
       background-color: #f2cccc;
@@ -193,77 +140,6 @@
       line-height: 12px;
       padding: 3px;
       font-style: italic; } }
-@media screen and (min-width: 0px) {
-  #shiprefresh {
-    display: block;
-    margin: 0 auto 15px;
-    padding: 10px;
-    background: #000000;
-    color: #FFFFFF;
-    border: none; }
-
-  .spinning #shiprefresh {
-    display: none; }
-
-  .spinning.shippingmethod * {
-    opacity: 0.75; }
-
-  .billingaddress,
-  .shippingaddress,
-  .shippingmethod {
-    margin-bottom: 20px; }
-
-  #shippingmethod .shipping_method {
-    margin-top: 20px; }
-
-  .shippingmethod fieldset.radio_container {
-    padding: 0; }
-
-  #address_shipping_shippingaddress .address-options.address-options-count-1 input.radio {
-    display: none; } }
-@media screen and (min-width: 641px) {
-  .address_new .widget {
-    padding: 0 10px; }
-
-  .widget.billingaddress_firstname,
-  .widget.shippingaddress_firstname,
-  .widget.billingaddress_city,
-  .widget.shippingaddress_city,
-  .widget.billingaddress_postal,
-  .widget.shippingaddress_postal,
-  .widget.billingaddress_phone,
-  .widget.shippingaddress_phone {
-    width: 50%;
-    float: left; }
-
-  .widget.billingaddress_lastname,
-  .widget.shippingaddress_lastname,
-  .widget.billingaddress_subdivision,
-  .widget.shippingaddress_subdivision,
-  .widget.billingaddress_country,
-  .widget.shippingaddress_country,
-  .widget.billingaddress_email,
-  .widget.shippingaddress_email {
-    width: 50%;
-    float: right; }
-
-  .widget.billingaddress_postal,
-  .widget.shippingaddress_postal {
-    width: 30%; }
-
-  .widget.billingaddress_country,
-  .widget.shippingaddress_country {
-    width: 70%; }
-
-  .widget.billingaddress_company,
-  .widget.shippingaddress_company,
-  .widget.billingaddress_city,
-  .widget.shippingaddress_city,
-  .widget.billingaddress_postal,
-  .widget.shippingaddress_postal,
-  .widget.billingaddress_phone,
-  .widget.shippingaddress_phone {
-    clear: both; } }
 @media screen and (min-width: 0px) {
   .mod_rhyme_onepagecheckout .steps {
     padding: 20px 0; }

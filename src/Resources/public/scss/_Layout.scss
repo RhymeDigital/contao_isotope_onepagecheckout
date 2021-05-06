@@ -1,0 +1,30 @@
+
+@media screen and (min-width:769px) {
+
+    .mod_rhyme_onepagecheckout {
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+
+            .stepsPanel,
+            .messagesPanel {
+                width: 100%;
+            }
+            .stepsPanel {
+                order: 1;
+            }
+            .messagesPanel {
+                order: 2;
+            }
+            .summaryPanel {
+                width: 40%;
+                order: 4;
+            }
+            .actionPanel {
+                width: 60%;
+                order: 3;
+            }
+        }
+    }
+
+}

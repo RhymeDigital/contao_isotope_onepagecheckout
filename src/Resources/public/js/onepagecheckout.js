@@ -45,8 +45,11 @@ var Rhyme = window.Rhyme || {};
             let initialHeadScripts = jQuery('head script');
             initialHeadScripts.each(function(i, el){
                 let src = jQuery(el).attr('src');
-                let arrSrc = src.split('?');
-                self.headScripts.push(arrSrc[0]);
+                if(typeof src !== 'undefined') {
+                    let arrSrc = src.split('?');
+                    self.headScripts.push(arrSrc[0]);
+                }
+
             });
 
             self.toggleModalSpinner('on', self.wrapper);

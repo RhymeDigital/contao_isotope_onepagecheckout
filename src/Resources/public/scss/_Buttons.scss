@@ -1,0 +1,20 @@
+
+@media screen and (min-width:0px) {
+
+    .mod_rhyme_onepagecheckout .submit_container {
+
+        .submit.previous,
+        .submit.next {
+            max-width:200px;
+        }
+        .submit.previous {
+            background-color: $white;
+            color: $black;
+            border: 1px solid $black;
+
+            &:hover {
+                color: $black !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+
+@media screen and (min-width:0px) {
+
+    /**
+     * Login / New user / Guest
+     */
+    #login_newuser_guest_login,
+    #login_newuser_guest_newuser,
+    #login_newuser_guest_guest {
+        margin:0 auto 50px;
+        max-width:320px;
+    }
+    #tl_login_checkout .mod_login br {
+        display:none;
+    }
+    #tl_login_checkout .mod_login table{
+        width:100%;
+    }
+    #iso_mod_checkout_login_newuser_guest p.message {
+        padding:0;
+        font-size: 14px;
+    }
+    #iso_mod_checkout_login_newuser_guest .submit_container {
+        display: none;
+    }
+    #iso_mod_checkout_login_newuser_guest  #tl_login_checkout .submit_container {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:641px) {
+
+    #login_newuser_guest_login,
+    #login_newuser_guest_newuser,
+    #login_newuser_guest_guest {
+        box-sizing: border-box;
+        margin:0;
+        max-width:none;
+        width:50%;
+        float:left;
+        padding: 20px;
+    }
+    #login_newuser_guest_newuser,
+    #login_newuser_guest_guest {
+        padding-bottom:0;
+    }
+    #login_newuser_guest_guest {
+        padding-top:0;
+    }
+
+}
+
+@media screen and (min-width:769px){
+
+    #iso_mod_checkout_login_newuser_guest  #tl_login_checkout .checkbox_container {
+        float:left;
+        width:50%;
+    }
+
+    #iso_mod_checkout_login_newuser_guest  #tl_login_checkout .submit_container {
+        display: block;
+        float:right;
+        width:50%;
+        clear: none;
+        padding-top:0;
+    }
+
+}

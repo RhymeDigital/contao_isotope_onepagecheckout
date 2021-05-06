@@ -1,0 +1,20 @@
+
+@media screen and (min-width:0px) {
+
+    .mod_rhyme_onepagecheckoutarea .mod_iso_messages {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+
+        p.iso_error {
+            padding: 20px;
+            display: inline-block;
+            background-color: #f2cccc;
+            border: 1px solid #CC0000;
+            color: #CC0000;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+}

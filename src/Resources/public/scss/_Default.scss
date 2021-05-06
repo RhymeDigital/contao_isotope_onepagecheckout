@@ -1,0 +1,61 @@
+
+@media screen and (min-width:0px) {
+
+    .mod_rhyme_onepagecheckout {
+        form {
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            font-weight:700;
+            font-size: 16px;
+            margin-bottom:15px;
+        }
+        p {
+            text-align: center;
+            margin:10px 0;
+        }
+        .widget.error {
+            input.text {
+                border: 2px solid #aa0000;
+                background-color: #f2cccc;
+                margin-bottom: 0;
+            }
+            p.error {
+                margin:0 0 1rem 5px;
+                display: inline-block;
+                vertical-align: top;
+                padding: 4px;
+                background-color: #aa0000;
+                color: $white;
+                font-size: 11px;
+                line-height: 12px;
+            }
+        }
+        .radio_container input.radio,
+        .radio_container input.radio + label {
+            display: inline;
+        }
+    }
+}
+
+@media screen and (min-width:641px) {
+
+    .mod_rhyme_onepagecheckout {
+        form {
+            margin:0 auto;
+            padding-bottom:50px;
+        }
+        h2,
+        p {
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .submit_container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}

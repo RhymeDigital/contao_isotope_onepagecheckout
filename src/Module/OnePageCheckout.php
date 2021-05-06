@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace Rhyme\ContaoIsotopeOnePageCheckoutBundle\Module;
 
+use Contao\Controller;
 use Contao\Environment;
 use Contao\FrontendTemplate;
 use Contao\Input;
@@ -53,6 +54,7 @@ class OnePageCheckout extends Checkout {
         //Load JavaScript and style sheet
         if ('FE' === TL_MODE) {
             $GLOBALS['TL_JAVASCRIPT']['onepagecheckout'] = 'bundles/rhymecontaoisotopeonepagecheckout/js/onepagecheckout.js|static';
+            $GLOBALS['TL_CSS']['onepagecheckout'] = 'bundles/rhymecontaoisotopeonepagecheckout/css/onepagecheckout.css';
         }
     }
 
@@ -154,7 +156,14 @@ class OnePageCheckout extends Checkout {
 
         //Now get the components and parse the template for each one
         //TODO - Make these configurable?
-        $arrComponents = ['steps', 'messages', 'actions', 'summary'];
+        $arrComponents = ['steps', 'messages', 'actions'];
+        if($this->iso_showCartSummary) {
+            $arrComponents[] = 'summary';
+            $this->Template->showSummaryPanel = true;
+            $this->Template->getCartSummary = function() {
+                return Controller::getFrontendModule($this->iso_cartSummaryModule);
+            };
+        }
         $arrReturn = [];
         foreach ($arrComponents as $component) {
             $this->Template->component = $component;

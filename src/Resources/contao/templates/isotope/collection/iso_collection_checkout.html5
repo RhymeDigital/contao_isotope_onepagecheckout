@@ -19,11 +19,7 @@
             <?php endif; ?>
         </td>
         <td class="col_<?php echo $i++; ?> quantity">
-            <?php if($this->isEditable): ?>
-                <input name="quantity[<?php echo $item['id']; ?>]" type="text" class="text" value="<?php echo $item['quantity']; ?>" maxlength="10">
-            <?php else: ?>
                 <?php echo $item['quantity']; ?> x
-            <?php endif; ?>
         </td>
         <td class="col_<?php echo $i++; ?> price"><?php echo $item['price']; ?></td>
         <td class="col_<?php echo $i++; if(!$this->isEditable && $this->total_tax_ids < 2) echo ' col_last'; ?> price total"><?php echo $item['total']; ?></td><?php if ($this->total_tax_ids > 1): ?>

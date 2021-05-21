@@ -60,7 +60,7 @@ var Rhyme = window.Rhyme || {};
          * Initial load
          */
         load: function() {
-            jQuery.ajax(document.location.href)
+            jQuery.ajax(document.location.href+'?ajax=1')
                 .done( function(data, status, jqXHR){
                     self.updatePanels(data);
                 }).fail(function( jqXHR, status ) {
